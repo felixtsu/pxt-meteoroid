@@ -2,8 +2,6 @@
 //%block="Meteoroid"
 //%block.loc.zh-CN="砸落特效"
 namespace meteoroid {
-
-
     let spriteShades :SparseArray<Sprite> = {}
 
     const METEOROID_DESTINATION_X = "METEOROID_DESTINATION_X"
