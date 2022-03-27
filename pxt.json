@@ -14,9 +14,7 @@
         "assets.json",
         "meteoroid.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "1.8.22",
         "targetId": "arcade"
