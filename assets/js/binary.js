@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.1.2","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/pxt-meteoroid"}
-// total=1211864 new=5.29% cached=88.71% other=6.00%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.1.3","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/pxt-meteoroid"}
+// total=1211872 new=5.29% cached=88.71% other=6.00%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -403,7 +403,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P71924(s) {
+function _main___P117925(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -759,18 +759,18 @@ switch (step) {
     globals.shade_3___60354 = (_hex60353);
     globals.shade_4___60357 = (_hex60356);
     r0 = pxsim_pxtrt.mkMap();
-    globals.spriteShades___60367 = (r0);
+    globals.spriteShades___117555 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P71924.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-shader/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P71924.continuations = [  ]
+_main___P117925.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-shader/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P117925.continuations = [  ]
 
-function _main___P71924_mk(s) {
+function _main___P117925_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P71924, depth: s.depth + 1,
+        parent: s, fn: _main___P117925, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -41039,7 +41039,7 @@ const sprites_BaseSpriteSayRenderer__C55944_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["spriteShades___60367"])
+const breakpoints = setupDebugger(1, ["spriteShades___117555"])
 
-return _main___P71924
+return _main___P117925
 })
