@@ -8,16 +8,16 @@ namespace meteoroid {
     const METEOROID_DESTINATION_Y = "METEOROID_DESTINATION_Y"
     const METEOROID_OFFSET = "METEOROID_OFFSET"
 
-    //%block
-    //%blockid=meteoroid_launch_meteoriod 
-    //%block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面"
+    //%blockId=meteoroid_launch_meteoriod block="launch $sprite=variables_get(mySprite) to $toLocation velocity %velocity after %delayMillis millis"
+    //%block.loc.zh-CN="将 $sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面 $toLocation"
+    //%toLocation.shadow=mapgettile
     export function launchMeteoroid(sprite:Sprite, toLocation:tiles.Location, velocity:number, delayMillis:number, offset:number=0) {
         launchMeteoroidToPosition(sprite, toLocation.x, toLocation.y, velocity, delayMillis, offset)
     }
 
-    //%block
-    //%blockid=meteoroid_launch_meteoriod 
-    //%block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面 || 距离地面高度 %offset 生效"
+
+    //%blockId=meteoroid_launch_meteoriod_to_position block="launch $sprite=variables_get(mySprite) to position x %x y %y velocity %velocity after %delayMillis millis"
+    //%block.loc.zh-CN="将 $sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面 x %x y %y || 距离地面高度 %offset 生效"
     export function launchMeteoroidToPosition(sprite: Sprite, x:number, y:number, velocity: number, delayMillis: number, offset:number=0) {
         sprite.setFlag(SpriteFlag.Ghost, true)
 
