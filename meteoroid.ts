@@ -9,13 +9,15 @@ namespace meteoroid {
     const METEOROID_OFFSET = "METEOROID_OFFSET"
 
     //%block
-    //%blockid=meteoroid_launch_meteoriod %block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面"
+    //%blockid=meteoroid_launch_meteoriod 
+    //%block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面"
     export function launchMeteoroid(sprite:Sprite, toLocation:tiles.Location, velocity:number, delayMillis:number, offset:number=0) {
         launchMeteoroidToPosition(sprite, toLocation.x, toLocation.y, velocity, delayMillis, offset)
     }
 
     //%block
-    //%blockid=meteoroid_launch_meteoriod %block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面 || 距离地面高度 %offset 生效"
+    //%blockid=meteoroid_launch_meteoriod 
+    //%block.loc.zh-CN="将 %sprite=variables_get(mySprite) 以速度 %velocity 在 %delayMillis 毫秒后砸向地面 || 距离地面高度 %offset 生效"
     export function launchMeteoroidToPosition(sprite: Sprite, x:number, y:number, velocity: number, delayMillis: number, offset:number=0) {
         sprite.setFlag(SpriteFlag.Ghost, true)
 
